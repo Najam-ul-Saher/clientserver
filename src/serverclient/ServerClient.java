@@ -53,6 +53,7 @@ public class ServerClient {
             oos.close();
             socket.close();
             //terminate the server if client sends exit request
+            
             if(message.equalsIgnoreCase("exit")) break;
         }
         System.out.println("Shutting down Socket server!!");
